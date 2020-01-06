@@ -13,14 +13,14 @@ import java.util.Random;
 public class CacheServiceImpl {
     @Cacheable(value="cache1")// cache1
     public int get() {
-      //local 1
+
         int num = new Random().nextInt();
-        //local 2
+
         return num;
     }
     @Cacheable(value="cache2")// cache2
     public int get2() {
-      //local 3
+
         int num = new Random().nextInt();
         return num;
     }
