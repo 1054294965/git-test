@@ -15,12 +15,12 @@ public class CacheServiceImpl {
     public int get() {
 
         int num = new Random().nextInt();
-
+        //modify1
         return num;
     }
     @Cacheable(value="cache2")// cache2
     public int get2() {
-
+//modify2
         int num = new Random().nextInt();
         return num;
     }
